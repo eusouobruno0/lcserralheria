@@ -30,3 +30,13 @@ WhatsApp: +55 51 99813-3404. Instagram: https://www.instagram.com/serralherialc0
 ## Verificações
 
 Build de produção, HTML pré-renderizado, referências locais, número oficial em todos os links WhatsApp e preservação dos originais. A revisão visual em navegador deve ser executada em 320, 375, 390, 768 e 1440 px antes da publicação pública, incluindo menu, galeria, foco por teclado, vídeo e ausência de overflow.
+
+## Cloudflare Pages com GitHub
+
+1. No Cloudflare, crie um projeto **Pages** e conecte `eusouobruno0/lcserralheria`.
+2. Selecione a branch `main`, comando de build `npm run build`, diretório de saída `dist` e raiz do projeto em branco.
+3. Configure `NODE_VERSION=22`.
+4. O endereço `pages.dev` é usado automaticamente no SEO pelo ambiente `CF_PAGES_URL`. Ao adicionar domínio próprio, configure `SITE_URL=https://seu-dominio.com.br` e faça um novo deploy.
+5. Alterações futuras em `main` serão publicadas automaticamente pelo Cloudflare após a conexão.
+
+Link atual público: https://serralheria-lc.contadobrunoamaral20.chatgpt.site
